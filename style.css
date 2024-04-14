@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: #35383C;
+    font-family: 'Lato', 'Trebuchet MS', 'Arial';
+    color:white;
+}
+
+.strength-container{
+    width:450px;
+    height:200px;
+    background:#222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+}
+
+.title-content p{
+    font-size:20px;
+    font-weight:700;
+    padding-top:0;
+    margin-top:0;
+}
+
+.password-box-container{
+    width:80%;
+}
+
+#password-box{
+    background:darkgrey;
+    width:350px;
+    height:50px;
+    border:0;
+    font-size:20px;
+    position:absolute;
+}
+
+button{
+    text-align:center;
+    font-size:15px;
+    width:50px;
+    height:50px;
+    background:darkolivegreen;
+    border:0;
+    border-radius:5px;
+    cursor:pointer;
+    position:relative;
+    top:1px;
+    left:300px;
+}
+
+button:hover{
+    transition:0.4s;
+    background:white;
+    color:black;
+}
+
+#progress-bar{
+    width:28.13rem;
+    height:40px;
+    background:white;
+    align-items: center;
+    position:absolute;
+    bottom:39.6vh;
+    display:none;
+}
+
+#bar-content{
+    width:10%;
+    height:100%;
+    background:green;
+    transition: 0.4s;
+}
+
+#password-text{
+    position:relative;
+    text-align:right;
+    z-index:90;
+    top:1.88rem;
+    left:-8.5rem;
+    color:black;
+    display:none;
+}
+
+@media screen and (max-height:850px){
+    #progress-bar{
+        bottom: 38vh;
+    }
+}
+@media screen and (max-height:770px){
+    #progress-bar{
+        bottom: 36vh;
+    }
+}
+@media screen and (max-height:690px){
+    #progress-bar{
+        bottom: 34vh;
+    }
+}
+@media screen and (max-height:610px){
+    #progress-bar{
+        bottom: 32vh;
+    }
+}
+@media screen and (max-height:540px){
+    #progress-bar{
+        bottom: 30vh;
+    }
+}
+@media screen and (max-height:460px){
+    #progress-bar{
+        bottom: 28vh;
+    }
+}
+@media screen and (max-height:440px){
+    #progress-bar{
+        bottom: 27vh;
+    }
+}
+
+@media screen and (max-width:450px){
+    .strength-container{
+        width:100%;
+    }
+
+    .password-box-container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap:5px;
+    }
+
+    #password-box{
+        width:80%;
+        position:static;
+    }
+
+    button{
+        position:static;
+        width:80%;
+    }
+    
+    #progress-bar{
+        width:100%;
+    }
+
+    #password-text{
+        top:8px;
+        left:0;
+    }
+}
